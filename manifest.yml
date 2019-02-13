@@ -1,8 +1,8 @@
 applications:
-- name: future tools
+- name: future-tools
   buildpack: https://github.com/cloudfoundry/nodejs-buildpack
   command: yarn start
-  memory: 256MB
+  memory: 1GB
   timeout: 120
   env:
     NODE_ENV: production
