@@ -4,5 +4,5 @@ export const CREATE_ATTENDEE = 'attendee/CREATE_ATTENDEE';
 
 export const createAttendee = (body: IAttendee) => ({
   type: CREATE_ATTENDEE,
-  payload: apiCall('/attendees', 'POST', body),
+  payload: apiCall('/api/attendees', 'POST', body),
 });

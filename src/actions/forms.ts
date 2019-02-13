@@ -3,5 +3,5 @@ export const GET_FORMS = 'forms/GET_FORMS';
 
 export const loadForms = () => ({
   type: GET_FORMS,
-  payload: apiCall('/forms'),
+  payload: apiCall('/api/forms'),
 });

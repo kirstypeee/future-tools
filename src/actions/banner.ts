@@ -3,5 +3,5 @@ export const GET_BANNER = 'banner/GET_BANNER';
 
 export const loadBanner = () => ({
   type: GET_BANNER,
-  payload: apiCall('/banners'),
+  payload: apiCall('/api/banners'),
 });

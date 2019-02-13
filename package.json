@@ -38,7 +38,16 @@
     "redux-devtools-extension": "^2.13.8",
     "typescript": "^3.3.1"
   },
-  "proxy": "https://future-tools-content.au-syd.mybluemix.net",
+  "proxy": {
+    "/api/*": {
+      "target": "https://future-tools-content.au-syd.mybluemix.net",
+      "pathRewrite": {
+        "^/api": ""
+      },
+      "ws": false,
+      "changeOrigin": true
+    }
+  },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
   "keywords": [],
