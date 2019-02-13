@@ -12,13 +12,13 @@ class AppBar extends React.Component<{}, {}> {
                     </div>
                 </div>
                 <div className="ibm__app-bar-row">
-                    <div className="ibm__app-bar-section ibm__flex-150">
+                    <Link to="/" className="ibm__app-bar-section ibm__flex-150">
                         <div className="ibm__type-header">
-                            IBM Cloud Garage Melbourne
+                            <b>IBM Cloud</b> Garage Melbourne
                     </div>
                         <div className="ibm__hover-border" />
-                    </div>
-                    <div className="ibm__app-bar-section">
+                    </Link>
+                    {/**<div className="ibm__app-bar-section">
                         <div className="ibm__type-header">
                             Future Workshop
                     </div>
@@ -30,6 +30,7 @@ class AppBar extends React.Component<{}, {}> {
                     </div>
                         <div className="ibm__hover-border" />
                     </Link>
+        **/}
                     <div className="ibm__app-bar-section ibm__align-self-right">
                         <Link to="/register" className="ibm__primary-button ibm__type-button">
                             Register

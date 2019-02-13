@@ -50,6 +50,15 @@ class App extends React.Component<IProps & IDispatchProps, {}> {
             <Route exact={true} path="/register" render={(props) => <Register {...props} register={createAttendee} form={forms.find((form) => form.formTitle === 'Register')} />} />
           </Switch>
         }
+        <footer className="ibm__footer">
+          <div className="ibm__footer-top">
+            <strong>IBM Cloud</strong> Garage
+        </div>
+          <div className="ibm__footer-bottom">
+            This event is part of Melbourne Design Week 2019 organised by NGV in collaboration with Creative Victoria
+            <a href="https://www.ngv.vic.gov.au/melbourne-design-week/" target="_blank">Visit Website</a>
+          </div>
+        </footer>
       </div>
     );
   }

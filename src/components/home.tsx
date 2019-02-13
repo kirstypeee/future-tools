@@ -14,7 +14,7 @@ class Home extends React.Component<IProps, {}> {
 
         return (
             <div className="ibm__page-home">
-                {banner["banner-image"] && <div className="ibm__home-banner" style={{ backgroundImage: `url(${banner["banner-image"].url})` }}>
+                {banner["banner-image"] && <div className="ibm__home-banner">
                     <div className="ibm__banner-title">{banner.title}</div>
                     <div className="ibm__banner-column">
                         <div className="ibm__banner-text">{banner.details}</div>
@@ -29,10 +29,10 @@ class Home extends React.Component<IProps, {}> {
                 <div className="ibm__tile-wrapper">
                     {tiles.map((tile: ITile) => {
                         return (
-                            <div className="ibm__tile" style={{ backgroundImage: `url(${tile.backgroundImage.url})` }}>
+                            <div className="ibm__tile">
                                 <div className="ibm__red-marker" />
                                 <div className="ibm__tile-title">{tile.title}</div>
-                                <div className="ibm__tile-image" style={{ backgroundImage: `url(${tile.tileImage.url})` }} />
+                                <div className="ibm__tile-image"/>
                             </div>
                         )
                     })

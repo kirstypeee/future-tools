@@ -57,7 +57,7 @@ class Register extends React.Component<IProps, IState> {
         return form ?
             (
                 <div className="ibm__page-register">
-                    <div className="ibm__form-panel" style={{ backgroundImage: `url(${form.panelImage.url})` }}>
+                    <div className="ibm__form-panel">
                         <div className="ibm__form-panel-title">
                             {form.panelTitle}
                         </div>
