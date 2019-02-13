@@ -10,6 +10,7 @@
     "@types/react-router-dom": "^4.3.1",
     "@types/redux-promise-middleware": "0.0.11",
     "connected-react-router": "^6.2.2",
+    "helmet": "^3.15.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-markdown": "^4.0.6",
@@ -19,10 +20,12 @@
     "react-scripts-ts": "3.1.0",
     "redux": "^4.0.1",
     "redux-promise-middleware": "^6.0.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "url-join": "^4.0.0"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
+    "dev": "react-scripts-ts start",
+    "start": "NODE_ENV=production node server/index.js",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
