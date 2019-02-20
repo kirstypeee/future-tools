@@ -87,3 +87,31 @@
 .ibm__ibm-logo-link a {
     visibility: hidden;
 }
+
+@media (max-width: 600px) {
+    .ibm__app-bar-row {
+        flex-direction: column;
+    }
+    .ibm__flex-150 {
+        flex: 0 1 100%;
+    }
+    .ibm__app-bar-section {
+        flex: 0 1 100%;
+        padding: 0;
+    }
+    .ibm__hover-border { 
+        display: none;
+    }
+    .ibm__align-self-right {
+        align-items: flex-start;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .ibm__banner-text {
+        font-size: 0.5rem;
+    }
+    .ibm__headline-text {
+        font-size: 0.5rem;
+        line-height: 1rem;
+    }
+}

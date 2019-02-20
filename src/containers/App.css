@@ -81,3 +81,15 @@
     background-color: rgba(#000, 0.1);
   }
 }
+
+@media (max-width: 600px) {
+  .ibm__footer {
+    font-size: 0.5rem;
+  }
+  .ibm__footer-top {
+    padding-bottom: 1rem;
+  }
+  .ibm__footer-bottom {
+    max-width: 200px;
+  }
+}

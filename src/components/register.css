@@ -91,3 +91,16 @@
     background-color: #eff1f2;
     color: #034bda;
 }
+
+@media (max-width: 600px) {
+    .ibm__page-register {
+        flex-direction: column;
+    } 
+    .ibm__form-panel-text {
+        font-size: 0.5rem;
+    }
+    .ibm__form {
+        flex-basis: calc(100% - 18vw);
+        padding: 9vw 30vw 9vw 9vw;
+    }
+}
